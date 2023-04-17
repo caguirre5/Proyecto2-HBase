@@ -66,10 +66,157 @@
       }
     },
     "2": {
-      "00005": {
+      "00006": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Sarah"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-333-3333",
+            "Timestamp2": "415-333-6789"
+          }
+        },
         "Office": {
           "Salary": {
-            "1681711507.831055": 3000
+            "1681720012.998736": 7500
+          }
+        }
+      },
+      "00007": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Bob"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-444-4444",
+            "Timestamp2": "415-444-7890"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720013.230134": 8500
+          }
+        }
+      },
+      "00008": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Emma"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-555-5555",
+            "Timestamp2": "415-555-8901"
+          }
+        },
+        "Office": {}
+      },
+      "00009": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Chris"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-666-6666",
+            "Timestamp2": "415-666-9012"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720013.579820": 6500
+          }
+        }
+      },
+      "00010": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Lisa"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-777-7777",
+            "Timestamp2": "415-777-0123"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720013.721208": 9500
+          }
+        }
+      }
+    },
+    "3": {
+      "00011": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Karen"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-888-8888",
+            "Timestamp2": "415-888-4567"
+          }
+        },
+        "Office": {}
+      },
+      "00012": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Adam"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-999-9999",
+            "Timestamp2": "415-999-2345"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720145.231765": 6000
+          }
+        }
+      },
+      "00013": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Grace"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-222-2222",
+            "Timestamp2": "415-222-5678"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720145.373153": 4000
+          }
+        }
+      },
+      "00014": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "David"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-333-3333",
+            "Timestamp2": "415-333-6789"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720145.514541": 8500
+          }
+        }
+      },
+      "00015": {
+        "Personal": {
+          "Name": {
+            "Timestamp1": "Olivia"
+          },
+          "Residence Phone": {
+            "Timestamp1": "415-444-4444",
+            "Timestamp2": "415-444-7890"
+          }
+        },
+        "Office": {
+          "Salary": {
+            "1681720145.655929": 9500
           }
         }
       }

@@ -10,7 +10,7 @@ def main(page: ft.Page):
         e.control.value = None
         page.update()
 
-    textDisplay = ft.Text(size=24, weight=5)
+    textDisplay = ft.Text(size=24)
     textFielInput = ft.TextField(
         label="Ingrese un comando a ejecutar; recuerde respetar la sintaxis (ej. CREATE <table_name>, <column_family>):",
         text_size=24,
@@ -32,12 +32,10 @@ def main(page: ft.Page):
                 textDisplay
             ],
             horizontal_alignment='center',
-            expand=True
-        ),
+            expand=True,
+        )
     )
 
 
 ft.app(target=main, view=WEB_BROWSER)
 
-# string = "Delete_ALL test1, 00002, Personal"
-# Init(string)

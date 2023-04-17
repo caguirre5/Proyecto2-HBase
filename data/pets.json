@@ -1,0 +1,18 @@
+{
+    "status": "ENABLED", 
+    "columnfamilies": ["Pet", "Owner"], 
+    "regions": {
+        "1":{
+            "Owner": {
+                "Name": {
+                    "Timestamp1": "Candice Warren"
+                }
+            },
+            "Pet": {
+                "Species": {
+                    "Timestamp1": "giraffe"
+                }
+            }
+        }
+    }
+}

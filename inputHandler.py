@@ -3,7 +3,6 @@ from databaseHandler import *
 
 def Init(string):
     lista = [palabra.strip(';') for palabra in string.split()]
-    print(lista)
 
     # CREATE <table_name>, <column_family>
     if lista[0].upper() == 'CREATE':
@@ -28,7 +27,6 @@ def Init(string):
     elif lista[0].upper() == 'ALTER':
         if lista[2].upper() == 'ADD':
             my_list = eval(lista[3])
-            print(my_list)
             return alterTable(lista[1], 'ADD', columnF=my_list)
         elif lista[2].upper() == 'DROP':
             my_list = eval(lista[3])

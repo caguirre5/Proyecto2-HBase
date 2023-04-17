@@ -1,0 +1,9 @@
+{
+  "status": "DISABLED",
+  "columnfamilies": [
+    "fam1",
+    "fam2",
+    "fam3"
+  ],
+  "regions": {}
+}

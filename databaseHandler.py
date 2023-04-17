@@ -294,7 +294,7 @@ def Get(tableName, rowKey, columnsFam=None, columnsName=None):
                                     retorno += (
                                         f'{colFKey} : {colContentKey} timestamp={ts}, value={val}\n\n')
     else:
-        retorno += ' >> ERROR: la tabla esta bloquada.\n'
+        retorno += ' >> ERROR: la tabla esta deshabilitada.\n'
 
     tf = time.time()  # registra el tiempo de fin
     totaltime = tf - ti
@@ -369,7 +369,7 @@ def Scan(tableName, startrow=None, stoprow=None, columns=None):
                                     str(timestamp) + '\t' + str(value) + '\n'
                                 )
     else:
-        retorno += ' >> ERROR: la tabla esta bloquada.\n'
+        retorno += ' >> ERROR: la tabla esta deshabilitada.\n'
     return retorno
 
 
@@ -424,7 +424,7 @@ def Delete(tableName, rowKey, ColFam=None, ColName=None, timeStam=None):
         with open(path, 'w') as file:
             json.dump(content, file)
     else:
-        retorno += ' >> ERROR: la tabla esta bloquada.\n'
+        retorno += ' >> ERROR: la tabla esta deshabilitada.\n'
 
     tf = time.time()  # registra el tiempo de fin
     totaltime = tf - ti
@@ -470,7 +470,7 @@ def DeleteAll(tableName, rowKey, columnFamily=None):
         with open(path, 'w') as file:
             json.dump(content, file)
     else:
-        retorno += ' >> ERROR: la tabla esta bloquada.\n'
+        retorno += ' >> ERROR: la tabla esta deshabilitada.\n'
 
     tf = time.time()  # registra el tiempo de fin
     totaltime = tf - ti
@@ -488,10 +488,9 @@ def Count(tableName):
             content = json.loads(content)
             file.close()
         for region in content['regions']:
-            for rowkey in content['regions'][region]:
-                counter += 1
+            counter += len(content['regions'][region])
     else:
-        print(' >> ERROR: la tabla esta bloquada.')
+        return (' >> ERROR: la tabla esta deshabilitada.')
     return counter
 
 
