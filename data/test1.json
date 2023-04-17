@@ -7,27 +7,11 @@
   "regions": {
     "1": {
       "00001": {
-        "Personal": {
-          "Name": {
-            "Timestamp1": "John"
-          },
-          "Residence Phone": {
-            "Timestamp1": "415-111-1111",
-            "Timestamp2": "415-111-1234"
-          }
-        },
+        "Personal": {},
         "Office": {}
       },
       "00002": {
-        "Personal": {
-          "Name": {
-            "Timestamp1": "John"
-          },
-          "Residence Phone": {
-            "Timestamp1": "415-111-1111",
-            "Timestamp2": "415-111-1234"
-          }
-        },
+        "Personal": {},
         "Office": {
           "Salary": {
             "1681708162.418085": 5000
@@ -39,12 +23,39 @@
           "Name": {
             "Timestamp1": "John"
           },
-          "Residence Phone": {
+          "ResidencePhone": {
             "Timestamp1": "415-111-1111",
             "Timestamp2": "415-111-1234"
           }
         },
-        "Office": {}
+        "Office": {
+          "Salary": {
+            "1681711433.820356": 4000
+          }
+        }
+      },
+      "00004": {
+        "Office": {
+          "Salary": {
+            "1681711456.361713": 4000
+          }
+        }
+      },
+      "00005": {
+        "Office": {
+          "Salary": {
+            "1681711479.349516": 4000
+          }
+        }
+      }
+    },
+    "2": {
+      "00005": {
+        "Office": {
+          "Salary": {
+            "1681711507.831055": 3000
+          }
+        }
       }
     }
   }

@@ -1,18 +1,42 @@
-from handler import *
+from databaseHandler import *
+from inputHandler import *
+from flet import *
+import flet as ft
 
-# db = read_database('database.txt')
 
-# createTable('test3', ['name', 'address', 'phone'])
-#alterTable('test3', 'ADD')
-# listTables()
-# disableTable('test2')
-# is_enabled('test1')
-# describeTable('test3')
-# dropTable('test2')
-# dropAll()
-#alterTable('test1', 'DROP', columF=['Office'])
+def main(page: ft.Page):
+    def textbox_changed(e):
+        textDisplay.value = Init(e.control.value)
+        e.control.value = None
+        page.update()
 
-Put('test1', '00010', 'Office', 'Salary', 4000)
+    textDisplay = ft.Text()
+    textFielInput = ft.TextField(
+        label="Ingrese un comando a ejecutar recuerde respetar la sintaxis (ej. CREATE <table_name>, <column_family>):",
+        on_submit=textbox_changed,
+    )
 
-#   llave del valor
-# database[rowkey][columnfamily][columnqualifier][timestamp]
+    page.add(
+        Column(
+            controls=[
+                Image(
+                    src=f'https://hbase.apache.org/images/hbase_logo_with_orca_large.png',
+                    fit=ft.ImageFit.CONTAIN,
+                    width=1000,
+                ),
+                Container(
+                    content=textFielInput,
+                    margin=margin.symmetric(horizontal=100),
+                ),
+                textDisplay
+            ],
+            horizontal_alignment='center',
+            expand=True
+        ),
+    )
+
+
+ft.app(target=main, view=WEB_BROWSER)
+
+# string = "Delete_ALL test1, 00002, Personal"
+# Init(string)

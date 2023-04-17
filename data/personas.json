@@ -1,0 +1,25 @@
+{
+  "status": "ENABLED",
+  "columnfamilies": [
+    "personal",
+    "office"
+  ],
+  "regions": {
+    "1": {
+      "00001": {
+        "office": {
+          "salary": {
+            "1681724020.363559": "4000"
+          }
+        }
+      },
+      "00002": {
+        "personal": {
+          "name": {
+            "1681724048.640625": "cris"
+          }
+        }
+      }
+    }
+  }
+}
