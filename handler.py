@@ -78,8 +78,21 @@ def is_enabled(tableName):
             print(False)
 
 
-def alterTable():
-    pass
+def alterTable(tableName, tipo, kwargs=[]):
+    path = './data/{}.json'.format(tableName)
+    with open(path, 'r') as file:
+        content = file.read()
+        content = json.loads(content)
+        print(type(content['columnfamilies']))
+        if tipo == 'ADD':
+            families = kwargs['families']
+            for i in families:
+                content['columnfamilies'].append(i)
+        elif tipo == 'DROP':
+            pass
+        elif tipo == 'RENAME TO':
+            new_name = kwargs['newName']
+            os.rename(path, new_name)
 
 
 def dropTable(tableName):
