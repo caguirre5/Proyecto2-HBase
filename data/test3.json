@@ -1,1 +1,60 @@
-{"status": "ENABLED", "columnfamilies": ["name", "address", "phone"], "regions": {}}
+{
+    "status": "ENABLED", 
+    "columnfamilies": ["name", "address"], 
+    "regions": {
+        "region1":{
+            "00001": {
+                "Personal": {
+                    "Name": {"Timestamp1": "John"},
+                    "Residence Phone": {
+                        "Timestamp1": "415-111-1111",
+                        "Timestamp2": "415-111-1234"
+                    }
+                },
+                "Office": {
+                    "Phone": {"Timestamp1": "415-212-5544"},
+                    "Address": {"Timestamp2": "1021 Market St"}
+                }
+            },
+            "00002": {
+                "Personal": {
+                    "Name": {"Timestamp1": "John"},
+                    "Residence Phone": {
+                        "Timestamp1": "415-111-1111",
+                        "Timestamp2": "415-111-1234"
+                    }
+                },
+                "Office": {
+                    "Phone": {"Timestamp1": "415-212-5544"},
+                    "Address": {"Timestamp2": "1021 Market St"}
+                }
+            },
+            "00003": {
+                "Personal": {
+                    "Name": {"Timestamp1": "John"},
+                    "Residence Phone": {
+                        "Timestamp1": "415-111-1111",
+                        "Timestamp2": "415-111-1234"
+                    }
+                },
+                "Office": {
+                    "Phone": {"Timestamp1": "415-212-5544"},
+                    "Address": {"Timestamp2": "1021 Market St"}
+                }
+            },
+            "00004": {
+                "Personal": {
+                    "Name": {"Timestamp1": "John"},
+                    "Residence Phone": {
+                        "Timestamp1": "415-111-1111",
+                        "Timestamp2": "415-111-1234"
+                    }
+                },
+                "Office": {
+                    "Phone": {"Timestamp1": "415-212-5544"},
+                    "Address": {"Timestamp2": "1021 Market St"}
+                }
+            }
+        }
+    }
+}
