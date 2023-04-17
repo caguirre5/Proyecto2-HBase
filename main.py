@@ -10,9 +10,10 @@ def main(page: ft.Page):
         e.control.value = None
         page.update()
 
-    textDisplay = ft.Text()
+    textDisplay = ft.Text(size=24, weight=5)
     textFielInput = ft.TextField(
-        label="Ingrese un comando a ejecutar recuerde respetar la sintaxis (ej. CREATE <table_name>, <column_family>):",
+        label="Ingrese un comando a ejecutar; recuerde respetar la sintaxis (ej. CREATE <table_name>, <column_family>):",
+        text_size=24,
         on_submit=textbox_changed,
     )
 

@@ -1,0 +1,17 @@
+{
+  "status": "ENABLED",
+  "columnfamilies": [
+    "personal"
+  ],
+  "regions": {
+    "1": {
+      "00001": {
+        "personal": {
+          "name": {
+            "1681762161.20279": "Cristian"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ENABLED",
+  "columnfamilies": [
+    "fisiologia",
+    "alimentacion"
+  ],
+  "regions": {
+    "1": {
+      "00001": {
+        "fisiologia": {
+          "altura": {
+            "1681767662.11984": "54"
+          }
+        }
+      }
+    }
+  }
+}
