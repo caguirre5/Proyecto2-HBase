@@ -85,13 +85,12 @@ def alterTable(tableName, tipo, kwargs=[]):
         content = json.loads(content)
         print(type(content['columnfamilies']))
         if tipo == 'ADD':
-            families = kwargs['families']
-            for i in families:
+            for i in kwargs:
                 content['columnfamilies'].append(i)
         elif tipo == 'DROP':
             pass
         elif tipo == 'RENAME TO':
-            new_name = kwargs['newName']
+            new_name = kwargs[0]
             os.rename(path, new_name)
 
 
