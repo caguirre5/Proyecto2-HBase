@@ -1,4 +1,14 @@
-import happybase as hb
+from handler import *
 
-conn = hb.Connection('localhost', port=9090)
-# 181.209.151.213
+# db = read_database('database.txt')
+
+createTable('test3', ['name', 'address', 'phone'])
+listTables()
+# disableTable('test2')
+is_enabled('test1')
+describeTable('test3')
+# dropTable('test2')
+# dropAll()
+
+#   llave del valor
+# database[rowkey][columnfamily][columnqualifier][timestamp]
