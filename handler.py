@@ -123,6 +123,10 @@ def describeTable(tableName):
         print('\nTable {} is {}'.format(tableName, content['status']))
         print(tableName)
         print('COLUMN FAMILIES DESCRIPTION')
+        
+        for column in content['columnfamilies']:
+            print(f"{{NAME => '{column}', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'false', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}}")
+
         print('{} row(s)'.format(len(content['columnfamilies'])))
 
     tf = time.time()  # registra el tiempo de fin
