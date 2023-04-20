@@ -33,9 +33,9 @@ def main(page: ft.Page):
             ],
             horizontal_alignment='center',
             expand=True,
+            scroll='auto'
         )
     )
 
 
 ft.app(target=main, view=WEB_BROWSER)
-
